@@ -22,7 +22,9 @@ function Counter() {
     }
   };
 
-  const incrementCount = () => setCount((prev) => prev + 1);
+  const incrementCount = () => {
+    setCount((prev) => prev + 1);
+  }
 
   const decrementCount = () => {
     if (count > 0) {
@@ -101,7 +103,7 @@ function Counter() {
   useEffect(() => {
     setMin(findMin(list));
     setMax(findMax(list));
-    setCount(list.size); 
+    // setCount(list.size); 
   }, [list]);
 
   return (
