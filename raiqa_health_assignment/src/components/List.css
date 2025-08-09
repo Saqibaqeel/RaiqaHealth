@@ -1,0 +1,223 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.first-container {
+  background: linear-gradient(to bottom right, #eef3ff, #cfe0ff);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 30px;
+  font-family: sans-serif;
+}
+
+/* Title */
+.first-container > h1:first-child {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #222;
+}
+
+/* Counter Card */
+.first-container > div.counter-card:first-of-type {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  width: 350px; /* Increased width */
+  height: 230px; /* Slightly taller */
+}
+
+.counter-card > h2:first-child {
+  text-align: center;
+  font-weight: 600;
+  color: #007bff;
+}
+
+.counter-controls {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.counter-controls > button {
+  border: 2px solid #007bff;
+  background: transparent;
+  color: #007bff;
+  padding: 9px 16px;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.counter-controls > button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.counter-controls > span {
+  font-size: 20px;
+  min-width: 35px;
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+}
+
+.add-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #0056b3;
+}
+
+/* List Card */
+.first-container > div.list-card:last-of-type {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  width: 350px; /* Increased width */
+  min-height: 370px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Min/Max row */
+.list-card > div.min-max-row:first-child {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.min-max-row > span:first-child {
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+.min-max-row > span:last-child {
+  font-weight: 600;
+}
+
+/* Reset/Sort row */
+.list-card > div.action-row:nth-child(3) {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.reset-btn {
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.reset-btn:hover {
+  background-color: #cc3b3b;
+}
+
+.sort-desc-btn,
+.sort-asc-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.sort-desc-btn:hover,
+.sort-asc-btn:hover {
+  background-color: #0056b3;
+}
+
+/* List items */
+.list-card > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 12px;
+  padding-left: 0;
+}
+
+.list-card > ul > li {
+  background-color: #f7f7f7;
+  padding: 10px 14px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  color: #333;
+  transition: background-color 0.2s ease;
+}
+
+.list-card > ul > li:nth-child(odd) {
+  background-color: #e9f0ff;
+}
+
+.list-card > ul > li > span:first-child {
+  font-weight: 600;
+  color: #222;
+}
+
+.list-card > ul > li > span:last-child {
+  color: #666;
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+.list-card > ul > li > button {
+  border: none;
+  background: transparent;
+  color: #999;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.list-card > ul > li > button:hover {
+  color: #ff4d4d;
+}
+
+/* Total numbers */
+.total-numbers {
+  background-color: #eef3ff;
+  padding: 8px 0;
+  border-radius: 6px;
+  text-align: center;
+  color: #007bff;
+  font-size: 1rem;
+  font-weight: 600;
+  user-select: none;
+}
