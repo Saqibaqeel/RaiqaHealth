@@ -16,7 +16,7 @@ function Counter() {
     }
     else if (num >= 0) {
       setList((prev) => new Set([...prev, num]));
-      toast.success('Item added successfully!');
+      toast.success(`${num} is succesfully added`);
     } else {
      toast.error('Count cannot be empty.');
     }
