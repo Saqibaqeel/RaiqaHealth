@@ -31,7 +31,7 @@ function Counter() {
        setCount((prev) => prev - 1);
 
     }else{
-         toast.error('Count canoot be empty.');
+         toast.error('Count canoot be negative.');
 
     }
      
